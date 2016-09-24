@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import "variables.scss";
+
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  margin-top: -21px; // For some reason, this is necessary
+
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  min-height: 100px;
+  background: url(hero-bg.jpg);
+}
+
+.button {
+  position: relative;
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 9999px;
+  min-width: 150px;
+  text-align: center;
+
+  border: 2px solid white;
+
+  &.primary {
+    background-color: white;
+    color: $primary;
+  }
+
+  &.secondary {
+    color: white;
+  }
+
+  &.scrolldown::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid white;
+  }
+}
