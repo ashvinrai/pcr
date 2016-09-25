@@ -23,3 +23,9 @@ fourseven:scss
 accounts-ui
 iron:router
 seba:minifiers-autoprefixer
+accounts-password
+accounts-facebook
+accounts-google
+accounts-twitter
+accounts-github
+accounts-weibo
