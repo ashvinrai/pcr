@@ -1,0 +1,110 @@
+@import "variables.scss";
+
+.hero {
+  background: url(hero-bg.jpg);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+
+  h1 {
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 74px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 17vw;
+    }
+    h4 {
+      font-size: 6vw;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    .button {
+      margin: 15px;
+    }
+  }
+  .login-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+.how-it-works {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+  .instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 300px;
+    hr {
+      width: 80%;
+      margin: 30px;
+      margin-bottom: 15px;
+      border-color: $lightest;
+    }
+    .number-wrapper {
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      border: 5px solid $lightest;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      margin: 15px;
+      margin-bottom: 25px;
+
+      .number {
+        margin-top: -8px;
+      }
+    }
+
+    .tip, .blurb {
+      font-size: 14px;
+    }
+    .tip {
+      font-weight: 400;
+    }
+    .blurb {
+      padding: 15px;
+      line-height: 2em;
+      font-weight: 200;
+    }
+  }
+}
