@@ -1,3 +1,5 @@
+// This is not how build selection will eventually work.
+// We'll use reactive variables when the builds are dynamic.
 Template.build.events({
   'click .select': (e) => {
     $target = $(e.target)
@@ -5,11 +7,3 @@ Template.build.events({
     $target.removeClass('tertiary').addClass('selected');
   }
 })
-
-// Template.user_simple_vote.events
-//   'click .option': (e) ->
-//     $target = $(e.target)
-//     value = $target.data 'value'
-//     SimplePick.add UserId, value, SimpleVote.get()._id
-//     $('.selected').removeClass 'selected'
-//     $target.addClass 'selected'

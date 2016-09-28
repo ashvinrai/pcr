@@ -1,0 +1,34 @@
+<template name="dashboard">
+<div class="login-wrapper">{{>loginButtons align="right"}}</div>
+<div class="dashboard">
+  <div class="widgets-wrapper">
+    <div class="widget">
+      {{>build}}
+      <div class="progress-circle">
+        <div class="progress-circle-inner">
+          <div class="amount">$435</div>
+          <div class="collected">collected</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="widget share">
+        <div>Sharable Link</div>
+        <input type="text">
+        <div class="share-button facebook"></div>
+        <div class="share-button twitter"></div>
+        <div class="share-button google"></div>
+      </div>
+      <div class="widget activity">
+        <h1>RECENT ACTIVITY</h1>
+        <div class="donation"><span class="donor">Lucjan Godefroy</span> contributed <span class="amount">$25.00</span></div>
+        <div class="donation"><span class="donor">Edvard Matthias</span> contributed <span class="amount">$25</span></div>
+        <div class="donation"><span class="donor">Cezary Peer</span> contributed <span class="amount">$50.00</span></div>
+        <div class="donation"><span class="donor">Teimurazi Ceneric</span> contributed <span class="amount">$125.00</span></div>
+        <div class="donation"><span class="donor">Geraldo Mayur</span> contributed <span class="amount">$15.00</span></div>
+        <div class="donation"><span class="donor">Gleb Neptunus</span> contributed <span class="amount">$385.00</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

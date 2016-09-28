@@ -1,0 +1,88 @@
+@import "variables.scss";
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+.widgets-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.widget {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin: 14px;
+  padding: 30px;
+  border-radius: 5px;
+
+  &.share {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &.activity {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+      font-weight: 200;
+    }
+    .donation {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+      border-top: 1px solid $primary;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.progress-circle {
+  margin: 30px;
+  width: 220px;
+  height: 220px;
+  background-color: #5081E4;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .progress-circle-inner {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    color: $light;
+
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .amount {
+      font-size: 36px;
+      font-weight: 500;
+    }
+    .collected {
+      font-variant: small-caps;
+    }
+  }
+}

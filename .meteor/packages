@@ -27,5 +27,5 @@ accounts-password
 accounts-facebook
 accounts-google
 accounts-twitter
-accounts-github
-accounts-weibo
+useraccounts:unstyled
+useraccounts:iron-routing
