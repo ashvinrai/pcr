@@ -33,29 +33,35 @@
         </div>
         <div class="spec">
           <span class="left">CPU</span>
-          <span class="right">{{parts.cpu}}</span>
+          <span class="right">{{parts.cpu.name}}</span>
         </div>
         {{#if parts.gpu}}
         <div class="spec">
           <span class="left">GPU</span>
-          <span class="right">{{parts.gpu}}</span>
+          <span class="right">{{parts.gpu.name}}</span>
+        </div>
+        {{/if}}
+		{{#if parts.cooler}}
+        <div class="spec">
+          <span class="left">Cooler</span>
+          <span class="right">{{parts.cooler.name}}</span>
         </div>
         {{/if}}
         <div class="spec">
           <span class="left">Motherboard</span>
-          <span class="right">{{parts.motherboard}}</span>
+          <span class="right">{{parts.motherboard.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Memory</span>
-          <span class="right">{{parts.memory}}</span>
+          <span class="right">{{parts.memory.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Storage</span>
-          <span class="right">{{parts.storage}}</span>
+          <span class="right">{{parts.storage.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Power Supply</span>
-          <span class="right">{{parts.psu}}</span>
+          <span class="right">{{parts.psu.name}}</span>
         </div>
       </div>
     </div>
@@ -76,29 +82,35 @@
         </div>
         <div class="spec">
           <span class="left">CPU</span>
-          <span class="right">{{parts.cpu}}</span>
+          <span class="right">{{parts.cpu.name}}</span>
         </div>
         {{#if parts.gpu}}
         <div class="spec">
           <span class="left">GPU</span>
-          <span class="right">{{parts.gpu}}</span>
+          <span class="right">{{parts.gpu.name}}</span>
+        </div>
+        {{/if}}
+		{{#if parts.cooler}}
+        <div class="spec">
+          <span class="left">Cooler</span>
+          <span class="right">{{parts.cooler.name}}</span>
         </div>
         {{/if}}
         <div class="spec">
           <span class="left">Motherboard</span>
-          <span class="right">{{parts.motherboard}}</span>
+          <span class="right">{{parts.motherboard.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Memory</span>
-          <span class="right">{{parts.memory}}</span>
+          <span class="right">{{parts.memory.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Storage</span>
-          <span class="right">{{parts.storage}}</span>
+          <span class="right">{{parts.storage.name}}</span>
         </div>
         <div class="spec">
           <span class="left">Power Supply</span>
-          <span class="right">{{parts.psu}}</span>
+          <span class="right">{{parts.psu.name}}</span>
         </div>
       </div>
     </div>
