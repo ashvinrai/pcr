@@ -1,0 +1,120 @@
+<template name="register">
+  <div class="register">
+    {{>select_build}}
+<!--
+    <div class="create-account">
+      {{>atPwdForm}}
+    </div>
+ -->
+    <div class="create-account">
+      {{>atForm}}
+    </div>
+  </div>
+</template>
+
+<template name="select_build">
+  <h3>choose your target build</h3>
+  <div class="builds">
+    {{#each builds}}
+      {{> build}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="build">
+  <div class="build">
+    <div class="build-inner">
+      <div class="case-wrapper">
+        <img src="{{imageUrl}}" alt="" class="case">
+      </div>
+      <div class="specs">
+        <div class="spec">
+          <div class="price">${{cost}}</div>
+        </div>
+        <div class="spec">
+          <span class="left">CPU</span>
+          <span class="right">{{parts.cpu.name}}</span>
+        </div>
+        {{#if parts.gpu}}
+        <div class="spec">
+          <span class="left">GPU</span>
+          <span class="right">{{parts.gpu.name}}</span>
+        </div>
+        {{/if}}
+		{{#if parts.cooler}}
+        <div class="spec">
+          <span class="left">Cooler</span>
+          <span class="right">{{parts.cooler.name}}</span>
+        </div>
+        {{/if}}
+        <div class="spec">
+          <span class="left">Motherboard</span>
+          <span class="right">{{parts.motherboard.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Memory</span>
+          <span class="right">{{parts.memory.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Storage</span>
+          <span class="right">{{parts.storage.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Power Supply</span>
+          <span class="right">{{parts.psu.name}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="button tertiary select" data-build-id="{{_id}}">select</div>
+  </div>
+</template>
+
+<template name="current_build">
+  {{#each builds}}
+  <div class="build">
+    <div class="build-inner">
+      <div class="case-wrapper">
+        <img src="{{imageUrl}}" alt="" class="case">
+      </div>
+      <div class="specs">
+        <div class="spec">
+          <div class="price">${{cost}}</div>
+        </div>
+        <div class="spec">
+          <span class="left">CPU</span>
+          <span class="right">{{parts.cpu.name}}</span>
+        </div>
+        {{#if parts.gpu}}
+        <div class="spec">
+          <span class="left">GPU</span>
+          <span class="right">{{parts.gpu.name}}</span>
+        </div>
+        {{/if}}
+		{{#if parts.cooler}}
+        <div class="spec">
+          <span class="left">Cooler</span>
+          <span class="right">{{parts.cooler.name}}</span>
+        </div>
+        {{/if}}
+        <div class="spec">
+          <span class="left">Motherboard</span>
+          <span class="right">{{parts.motherboard.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Memory</span>
+          <span class="right">{{parts.memory.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Storage</span>
+          <span class="right">{{parts.storage.name}}</span>
+        </div>
+        <div class="spec">
+          <span class="left">Power Supply</span>
+          <span class="right">{{parts.psu.name}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="button tertiary select" data-build-id="{{_id}}">CHANGE BUILD</div>
+  </div>
+  {{/each}}
+</template>
