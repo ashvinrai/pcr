@@ -190,7 +190,7 @@ Meteor.startup(() => {
 
   builds = [
     {
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/RosewillFBM02.jpg',
       parts: {
 		case: Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}),
         cpu: Parts.findOne({name: 'Intel Celeron G3900 2.8GHz Dual-Core Processor'}),
@@ -203,7 +203,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Celeron G3900 2.8GHz Dual-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'G.Skill NT Series 8GB (1 x 8GB) DDR4-2400 Memory'}).price + Parts.findOne({name: 'Hitachi Ultrastar 500GB 3.5" 7200RPM Internal Hard Drive'}).price + Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price).toFixed(2)
     },
     {
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/RosewillFBM02.jpg',
       parts: {
         case: Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}),
         cpu: Parts.findOne({name: 'Intel Pentium G4500 3.5GHz Dual-Core Processor'}),
@@ -215,7 +215,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Pentium G4500 3.5GHz Dual-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'G.Skill NT Series 8GB (1 x 8GB) DDR4-2400 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/RosewillFBM02.jpg',
       parts: {
         case: Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}),
         cpu: Parts.findOne({name: 'Intel Pentium G4400 3.3 GHz Dual-Core Processor'}),
@@ -228,7 +228,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Pentium G4500 3.5GHz Dual-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'G.Skill NT Series 8GB (1 x 8GB) DDR4-2400 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Rosewill FBM-02 MicroATX Mini Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1050 Ti 4GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbide100R.jpg',
       parts: {
         case: Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}),
 		cpu: Parts.findOne({name: 'Intel Core i3-6100 3.7 GHz Dual-Core Processor'}),
@@ -241,7 +241,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i3-6100 3.7 GHz Dual-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'G.Skill NT Series 8GB (1 x 8GB) DDR4-2400 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1050 Ti 4GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbide100R.jpg',
       parts: {
 		case: Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}),
         cpu: Parts.findOne({name: 'Intel Core i3-6100 3.7 GHz Dual-Core Processor'}),
@@ -254,7 +254,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i3-6100 3.7 GHz Dual-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1060 6GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbide100R.jpg',
       parts: {
         case: Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}),
         cpu: Parts.findOne({name: 'Intel Core i5-6500 3.2 GHz Quad-Core Processor'}),
@@ -267,7 +267,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i5-6500 3.2 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Asus H110M-A/M.2 Micro ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1060 6GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbide100R.jpg',
       parts: { 
         case: Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}),
 		cooler: Parts.findOne({name: 'Cryorig H7 Tower Cooler'}),
@@ -281,7 +281,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i5-6600K 3.5 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Cryorig H7 Tower Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Series 100R Quiet Mid Tower Case'}).price + Parts.findOne({name: 'EVGA 430W 80+ Certified ATX Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1060 6GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/PhanteksEclipse.jpg',
       parts: { 
         case: Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}),
 		cooler: Parts.findOne({name: 'Cryorig H7 Tower Cooler'}),
@@ -295,7 +295,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i5-6600K 3.5 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Cryorig H7 Tower Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}).price + Parts.findOne({name: 'Corsair RMx 650W Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1060 6GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/PhanteksEclipse.jpg',
       parts: { 
         case: Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}),
 		cooler: Parts.findOne({name: 'Cryorig H7 Tower Cooler'}),
@@ -309,7 +309,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i5-6600K 3.5 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Cryorig H7 Tower Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}).price + Parts.findOne({name: 'Corsair RMx 650W Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1070 8GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/PhanteksEclipse.jpg',
       parts: { 
         case: Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}),
 		cooler: Parts.findOne({name: 'Cryorig H7 Tower Cooler'}),
@@ -323,7 +323,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i7-6700K 4.0 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Cryorig H7 Tower Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Phanteks Eclipse Series P400S ATX Tower Case'}).price + Parts.findOne({name: 'Corsair RMx 650W Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1070 8GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbideClear.jpg',
       parts: { 
         case: Parts.findOne({name: 'Corsair Carbide Clear Mid-Tower Case'}),
 		cooler: Parts.findOne({name: 'Noctua NH-D15 Cooler'}),
@@ -337,7 +337,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i7-6700K 4.0 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Noctua NH-D15 Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'OCZ TRION 150 480GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Clear Mid-Tower Case'}).price + Parts.findOne({name: 'Corsair RMx 650W Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1070 8GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbideClear.jpg',
       parts: { 
         case: Parts.findOne({name: 'Corsair Carbide Clear Mid-Tower Case'}),
 		cooler: Parts.findOne({name: 'Noctua NH-D15 Cooler'}),
@@ -351,7 +351,7 @@ Meteor.startup(() => {
 	  cost: (Parts.findOne({name: 'Intel Core i7-6700K 4.0 GHz Quad-Core Processor'}).price + Parts.findOne({name: 'Noctua NH-D15 Cooler'}).price + Parts.findOne({name: 'Asus Z170-A ATX LGA1151 Motherboard'}).price + Parts.findOne({name: 'Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3000 Memory'}).price + Parts.findOne({name: 'Samsung 850 EVO 500GB 2.5" Solid State Drive'}).price + Parts.findOne({name: 'Corsair Carbide Clear Mid-Tower Case'}).price + Parts.findOne({name: 'Corsair RMx 650W Power Supply'}).price + Parts.findOne({name: 'EVGA GeForce GTX 1070 8GB GDDR5 Graphics Card'}).price).toFixed(2)
     },
 	{
-      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/31y8B2r6IAL._SX300_.jpg',
+      imageUrl: 'caseimages/CorsairCarbideClear.jpg',
       parts: { 
         case: Parts.findOne({name: 'Corsair Carbide Clear Mid-Tower Case'}),
 		cooler: Parts.findOne({name: 'Noctua NH-D15 Cooler'}),
