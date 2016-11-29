@@ -1,17 +1,3 @@
-<template name="register">
-  <div class="register">
-    {{>select_build}}
-<!--
-    <div class="create-account">
-      {{>atPwdForm}}
-    </div>
- -->
-    <div class="create-account">
-      {{>atForm}}
-    </div>
-  </div>
-</template>
-
 <template name="select_build">
   <h3>choose your target build</h3>
   <div class="builds">
@@ -114,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="button tertiary select" data-build-id="{{_id}}">CHANGE BUILD</div>
+    <a href="/select_build" class="button tertiary select">CHANGE BUILD</a>
   </div>
   {{/each}}
 </template>

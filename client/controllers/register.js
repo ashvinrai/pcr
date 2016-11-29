@@ -4,24 +4,29 @@ Template.select_build.helpers({
   }
 })
 
-// This is not how build selection will eventually work.
-// We'll use reactive variables when the builds are dynamic.
 Template.build.events({
-  'click .select': (e) => {
+  'click .select': (e, i) => {
     $target = $(e.target)
-    $('.selected').removeClass('selected').addClass('tertiary')
-    $target.removeClass('tertiary').addClass('selected');
+    buildId = $target.data('buildId');
+    user = Meteor.user();
+    Meteor.users.update(Meteor.userId(),
+      {
+      '$set': {
+        'profile.build': Builds.findOne(buildId)
+      }
+    });
+    Router.go('/dashboard');
   }
 })
 
 Template.current_build.helpers({
   builds: function() {
-    user = Accounts.user();
-    if (!user.build) {
-      user.build = Builds.findOne({})._id;
+    user = Meteor.user();
+    if (!(user.profile && user.profile.build)) {
+      Router.go('/select_build');
+      return false;
+    } else {
+      return [user.profile.build];
     }
-    Accounts.users.insert(user);
-    console.log(user);
-    return Builds.find(user.build);
   }
 })
