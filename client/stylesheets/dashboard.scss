@@ -214,14 +214,32 @@
   color:white;
 }
  .whyamiup{
-  text-align: center
- }
 
- .whyamiup input{
+  width:50%;
+}
+
+.whyamiup input{
   margin: 5px;
- }
+  border:none;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+  padding-bottom:0px;
+  border-radius: 0px;
+  padding-left:0px;
+  padding-right: 0px;
+}
 
- .whyamiup button{
-  display: inline;
+.whyamiup button{
+  display: inline-table;
   background-color: white
- }
+}
+
+.confield{
+  margin-bottom: 3%
+}
+
+.conrow{
+  display: inline-block;
+  width:100%;
+}
+
