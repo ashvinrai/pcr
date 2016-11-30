@@ -32,7 +32,8 @@ Meteor.methods({
       source: stripeToken
     }, Meteor.bindEnvironment(function(err, charge) {
       console.log(err, charge);
-      data.time = Date.now()
+      data.time = Date.now();
+      data.amount /= 100;
       Contributions.insert(data)  
     }));
   }

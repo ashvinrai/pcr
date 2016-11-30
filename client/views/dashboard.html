@@ -4,10 +4,21 @@
   <div class="widgets-wrapper">
       {{>current_build}}
     <div class="widget">
-      <div class="progress-circle">
-        <div class="progress-circle-inner">
-          <div class="amount">$435</div>
-          <div class="collected">collected</div>
+      {{#if fullyFunded}}
+      <h1>
+        Congratulations, you're fully funded! Time to <a href="/order">order your parts</a> or <a href="/select_build">select a more expensive build</a>!
+      </h1>
+      {{/if}}
+      <div class="progress-bar">
+        <div id="progress-bar" class="progress-bar-inner" style="width: {{progressBarWidth}}">
+          <div class="progress-bar-inner-text progress-bar-text">
+            <div class="amount">${{collected}}</div>
+            <div class="collected">collected</div>            
+          </div>
+        </div>
+        <div class="progress-bar-outer-text progress-bar-text">
+          <div class="amount">${{collected}}</div>
+          <div class="collected">collected</div>                  
         </div>
       </div>
     </div>

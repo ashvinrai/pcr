@@ -1,4 +1,15 @@
-Template.select_build.helpers({
+Number.prototype.formatMoney = function(c, d, t){
+  var n = this, 
+      c = isNaN(c = Math.abs(c)) ? 2 : c, 
+      d = d == undefined ? "." : d, 
+      t = t == undefined ? "," : t, 
+      s = n < 0 ? "-" : "", 
+      i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))), 
+      j = (j = i.length) > 3 ? j % 3 : 0;
+     return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+ };
+
+ Template.select_build.helpers({
   builds: () => {
     return Builds.find({}).fetch()
   }
@@ -51,6 +62,29 @@ Template.dashboard.helpers({
   },
   contributions() {
     return Contributions.find({shareId: Meteor.user().profile.shareId});
+  },
+  collected() {
+    var total = 0;
+    Contributions.find({shareId: Meteor.user().profile.shareId}).forEach((contribution) => {
+      total += contribution.amount;
+    })
+    return total;
+  },
+  progressBarWidth() {
+    var total = 0;
+    Contributions.find({shareId: Meteor.user().profile.shareId}).forEach((contribution) => {
+      total += contribution.amount;
+    })
+    var a = total/parseFloat(Meteor.user().profile.build.cost)*100;
+    console.log(a + '%')
+    return a + '%'
+  },
+  fullyFunded() {
+    var total = 0;
+    Contributions.find({shareId: Meteor.user().profile.shareId}).forEach((contribution) => {
+      total += contribution.amount;
+    })
+    return total >= parseFloat(Meteor.user().profile.build.cost)
   }
 })
 
@@ -72,7 +106,7 @@ Template.contribute.events({
     }, function(status, response) {
       stripeToken = response.id;
       console.log(status, response)
-      Meteor.call('chargeCard', stripeToken, {amount: amount, shareId: Meteor.user().profile.shareId, name: name});
+      Meteor.call('chargeCard', stripeToken, {amount: amount*100, shareId: Meteor.user().profile.shareId, name: name});
     })
   }
 })
