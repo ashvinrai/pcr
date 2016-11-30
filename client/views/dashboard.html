@@ -14,20 +14,26 @@
     <div class="row">
       <div class="widget share">
         <div>Sharable Link</div>
-        <input type="text">
+        <input type="text" value="{{shareableLink}}" readonly="readonly">
         <div class="share-button facebook"></div>
         <div class="share-button twitter"></div>
         <div class="share-button google"></div>
       </div>
       <div class="widget activity">
         <h1>RECENT ACTIVITY</h1>
+<!-- 
         <div class="donation"><span class="donor">Lucjan Godefroy</span> contributed <span class="amount">$25.00</span></div>
         <div class="donation"><span class="donor">Edvard Matthias</span> contributed <span class="amount">$25</span></div>
         <div class="donation"><span class="donor">Cezary Peer</span> contributed <span class="amount">$50.00</span></div>
         <div class="donation"><span class="donor">Teimurazi Ceneric</span> contributed <span class="amount">$125.00</span></div>
         <div class="donation"><span class="donor">Geraldo Mayur</span> contributed <span class="amount">$15.00</span></div>
         <div class="donation"><span class="donor">Gleb Neptunus</span> contributed <span class="amount">$385.00</span></div>
-      </div>
+
+ -->
+        {{#each contributions}}
+          <div class="donation"><span class="donor">{{name}}</span> contributed <span class="amount">${{amount}}</span></div>
+        {{/each}}
+       </div>
     </div>
   </div>
 </div>

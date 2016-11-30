@@ -22,6 +22,22 @@ Builds.find({}).forEach((build) => {
 	Builds.remove(build._id);
 })
 
+Meteor.methods({
+  'chargeCard': function(stripeToken, data) {
+    var Stripe = StripeAPI('sk_test_FmGP5PQrdaUbHzh4rEHVaCdS');
+
+    Stripe.charges.create({
+      amount: data.amount,
+      currency: 'usd',
+      source: stripeToken
+    }, Meteor.bindEnvironment(function(err, charge) {
+      console.log(err, charge);
+      data.time = Date.now()
+      Contributions.insert(data)  
+    }));
+  }
+});
+
 Meteor.startup(() => {
   parts = [
     {

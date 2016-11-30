@@ -70,6 +70,7 @@ modules@0.7.6
 modules-runtime@0.7.6
 mongo@1.1.12
 mongo-id@1.0.5
+mrgalaxy:stripe@2.2.2
 npm-bcrypt@0.9.1
 npm-mongo@1.5.49
 oauth@1.1.11
