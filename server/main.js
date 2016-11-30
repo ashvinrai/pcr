@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+import { Email } from 'meteor/email';
 
 Meteor.users.allow({
   update: function (userId, user, fields, modifier) {
@@ -25,6 +26,14 @@ Builds.find({}).forEach((build) => {
 Meteor.methods({
   'chargeCard': function(stripeToken, data) {
     var Stripe = StripeAPI('sk_test_FmGP5PQrdaUbHzh4rEHVaCdS');
+
+
+    Email.send({
+      to: Meteor.user().emails[0].address,
+      from: "campaign_updates@pcr.com",
+      subject: "Thank you for your contribution!",
+      text: "Thank you for your donation!"
+    });
 
     Stripe.charges.create({
       amount: data.amount,
