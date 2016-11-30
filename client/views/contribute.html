@@ -2,12 +2,20 @@
 	<div class="widget">
 		<h1>Donate to help build this computer!</h1>
 		<div class="whyamiup">
-			<input type="text" id="name" placeholder="Name">
-			<input type="text" id="card-num" placeholder="Credit Card">
-			<input type="text" id="cvc" placeholder="CVC">
-			<input type="text" id="exp-month" placeholder="Exipration Month">
-			<input type="text" id="exp-year" placeholder="Expiration Year">
-			<input type="text" id="amount" placeholder="Amount">
+			<div class="conrow">
+				<div class="confield"><label>Who is donating?</label><input type="text" id="name" ></div>
+				<div class="confield"><label>Amount?</label><input type="text" id="amount"></div>
+			</div>
+			
+			<div class="conrow">
+				<div class="confield"><label>Credit Card number:</label><input type="text" id="card-num"></div>
+				<div class="confield"><label>CVC:</label><input type="text" id="cvc"></div>
+			</div>
+			<div class="conrow">
+				<div class="confield"><label>Expiration month:</label><input type="text" id="exp-month"></div>
+				<div class="confield"><label>Expiration year:</label><input type="text" id="exp-year"></div>
+			</div>
+			
 			<button id="submit-payment" class="button tertiary">SUBMIT</button>
 		</div>
 	</div>
