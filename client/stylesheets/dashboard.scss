@@ -86,3 +86,121 @@
     }
   }
 }
+.at-oauth{
+  text-align: center;
+  position: relative;
+}
+
+.at-social-btn{
+  position: relative;
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  background-color: transparent;
+  padding: 8px;
+  margin:5px;
+
+
+  border: 2px solid white;
+  text-decoration: none;
+
+  &.primary {
+    background-color: white;
+    color: $primary;
+  }
+}
+.at-pwd-form {
+  position:relative;
+  text-align: center;
+}
+.at-pwd-form label {
+  display: none;
+}
+.at-pwd-form input {
+  margin-top:10px;
+  background:transparent;
+  border:none;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+  padding-bottom:0px;
+  border-radius: 0px;
+  padding-left:0px;
+  color:white;
+}
+
+.at-pwd-form input:click {
+  border:none;
+  box-shadow: none;
+}
+
+.at-pwd-form ::-webkit-input-placeholder {
+  color: white;
+}
+.at-title{
+  color: white;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.at-sep{
+  display:none;
+}
+
+.at-signin-link {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.at-btn {
+  position: relative;
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  background-color: transparent;
+  padding: 8px;
+  margin:15px;
+  color:white;
+  border: none;
+
+
+  text-decoration: none;
+
+  &.primary {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+.at-error{
+  color: pink;
+  text-align: center
+}
+
+.at-signin {
+  color:lightblue;
+}
+
+.at-signup-link {
+  text-align: center;
+  color:white;
+}
+ .whyamiup{
+  text-align: center
+ }
+
+ .whyamiup input{
+  margin: 5px;
+ }
+
+ .whyamiup button{
+  display: inline;
+  background-color: white
+ }
