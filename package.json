@@ -6,7 +6,10 @@
   },
   "dependencies": {
     "bcrypt": "^0.8.7",
-    "meteor-node-stubs": "~0.2.0",
-    "stripe": "^4.13.0"
+    "https": "^1.0.0",
+    "index.js": "0.0.3",
+    "meteor-node-stubs": "^0.2.4",
+    "stripe": "^4.13.0",
+    "zinc": "^0.1.3"
   }
 }

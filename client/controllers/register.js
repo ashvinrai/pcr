@@ -50,7 +50,7 @@ Template.dashboard.helpers({
     return Meteor.absoluteUrl('c/' + Meteor.user().profile.shareId);
   },
   contributions() {
-    return Contributions.find({shareId: Meteor.user().profile.shareId});
+    return Contributions.find({shareId: Meteor.user().profile.shareId}, {sort: {time: -1}});
   },
   collected() {
     var total = 0;
