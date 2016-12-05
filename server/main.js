@@ -27,9 +27,8 @@ Meteor.methods({
   'chargeCard': function(stripeToken, data) {
     var Stripe = StripeAPI('sk_test_FmGP5PQrdaUbHzh4rEHVaCdS');
 
-
     Email.send({
-      to: Meteor.user().emails[0].address,
+      to: 'benhirsch42@gmail.com',
       from: "campaign_updates@pcr.com",
       subject: "Thank you for your contribution!",
       text: "Thank you for your donation!"

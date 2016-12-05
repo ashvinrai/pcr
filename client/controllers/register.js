@@ -78,15 +78,17 @@ Template.dashboard.helpers({
 })
 
 Template.contribute.events({
-  'click #submit-payment': () => {
+  'click #submit-payment': function() {
     Stripe.setPublishableKey('pk_test_1nIlBMwLLFerk5aZeNtqEdrl');
     var name = $("#name").val();
+    var email = $("#email").val();
     var cardNum = $("#card-num").val();
     var cvc = $("#cvc").val();
     var expMonth = $("#exp-month").val();
     var expYear = $("#exp-year").val();
     var amount = parseFloat($("#amount").val());
     console.log(amount);
+    console.log(this);
     Stripe.card.createToken({
       number: cardNum,
       cvc: cvc,
@@ -95,7 +97,8 @@ Template.contribute.events({
     }, function(status, response) {
       stripeToken = response.id;
       console.log(status, response)
-      Meteor.call('chargeCard', stripeToken, {amount: amount*100, shareId: Meteor.user().profile.shareId, name: name});
+      Meteor.call('chargeCard', stripeToken, {amount: amount*100, shareId: Router.current().originalUrl.split('/c/')[1], name: name, email: email});
+      Router.go('/thanks')
     })
   }
 })
