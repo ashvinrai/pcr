@@ -74,7 +74,7 @@ The advantage of using Meteor's first-party hosting service is that building and
 DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy --settings settings.json pcr.meteorapp.com
 ```
 ##How the project's code is structured
-Meteor is a fairly opinionated framework, which is to say, two Meteor projects that do very different things will still have similar code structure. To this end, if you are not already familiar with the Meteor framewor, [their official tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) will take you a long way in understanding how the application works.
+Meteor is a fairly opinionated framework, which is to say, two Meteor projects that do very different things will still have similar code structure. To this end, if you are not already familiar with the Meteor framework, [their official tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) will take you a long way in understanding how the application works.
 
 | Filepath | What it contains |
 |:------------- |:-------------|
