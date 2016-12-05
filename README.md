@@ -6,13 +6,16 @@ A platform for crowdsourcing the funds for a personal computer, then ordering th
 ###New features
 - The platform can create order objects using the Zinc API
 - The dashboard responsively prompts the user to submit their parts order when enough funds have been collected
+
 ###Bug fixes
 - Users are redirected to the homepage upon logging out, instead of getting stuck on a non-functional dashboard
+
 ###Known bugs and defects
 - The production server does not have SMTP configured, so though the code to send verification emails is present and functional in the platform, the emails are not actually sent. Details on how to configure SMTP with Meteor can be found [here](https://themeteorchef.com/snippets/using-the-email-package/).
 - While the platform is safe from the submission of malicious data, it does not format or validate forms on the client. An effective library to correct this would be [Cleave.js](https://nosir.github.io/cleave.js/).
 - Payment acceptance in the platform is handled with [Stripe](https://stripe.com/), but is currently in [Test Mode](https://stripe.com/docs/testing). Before the project can accept real payments, Stripe has to be configured for production. It would also be recommended to break out Stripe keys into an environment variable file, so that they can be configured independently for development, staging, and testing environments.
 - The platform uses [Zinc](https://zinc.io/) to automate ordering computer parts from Amazon. Orders objects are successfully created, but Zinc cannot validate them because they do not include valid payment information. Correcting this requires setting up automatic transfers from Stripe to a bank account, then configuring the server to use that bank account's credentials when submitting orders to Zinc.
+
 ##How to set up your development environment
 
 ###1) Install Meteor
@@ -40,6 +43,7 @@ cd pcr/
 meteor
 ```
 > If this doesn't work, try restarting your console to make sure that the `meteor` command has been loaded from the path. If `meteor` still doesn't work, make sure that it is included in your system path variables.
+
 ###5) Check it out in your browser
 Once Meteor is happy and running in your console, navigate to [```http://localhost:3000/```](http://localhost:3000/).
 
